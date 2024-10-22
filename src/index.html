@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Navbar -->
+     <header class="main-header">
+        <nav class="navbar header-nav navbar-expand-lg" id="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand text-decoration-none">
+                    <img src="img/profile.jpg" alt="profile photo" class="rounded-circle profile-photo">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="nav-link">Experience</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
+                    <i class="bi bi-list collapse-icon open"></i>
+                    <i class="bi bi-x collapse-icon close"></i>
+                </button>
+            </div>
+        </nav>
+     </header>
+     <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
+        <section id="home" class="home">
+            <div class="container">
+                <!-- <div class="languages-animated">
+                    <div class="languages-animated">Hola</div>
+                    <div class="languages-animated">Hola</div>
+                    <div class="languages-animated">Hola</div>
+                </div> -->
+                <div class="row gy-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home-main text-center text-lg-start">
+                            <h6>Hi, my name is jesus</h6>
+                            <h2>I'm a <span id="typed"></span></h2>
+                            <div class="badges justify-content-between">
+                                <a href="https://github.com/jesusjsg" class="badge rounded-pill text-bg-dark text-decoration-none"><i class="bi bi-github me-2"></i>Github</a>
+                                <a href="https://www.linkedin.com/in/jes%C3%BAs-santana" class="badge rounded-pill text-bg-dark text-decoration-none"><i class="bi bi-linkedin me-2"></i>LinkedIn</a>
+                                <a href="" class="badge rounded-pill text-bg-dark text-decoration-none">Hola</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pt-lg-0">
+                        <div class="home-profile-photo text-center">
+                            <img src="img/profile.jpg" alt="home profile photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects-section section">
+            <div class="container">
+                <div class="section-heading">
+                    <h3><i class="bi bi-code-slash me-2"></i>Projects</h3>
+                </div>
+                <div class="projects-box">
+                    <div class="row gx-3 gy-4 pb-3 mb-3 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="projects-img">
+                                <img src="img/movieHub.png" alt="movieHub">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="projects-text">
+                                <span class="title-project">MovieHub</span>
+                                <div class="languages">
+                                    <span class="badge rounded-pill text-bg-dark"><img src="img/django.svg" alt="django">Django</span>
+                                    <span class="badge rounded-pill text-bg-dark"><img src="img/python.svg" alt="python">Python</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id deleniti vitae sint labore quaerat qui</p>
+                                <div class="preview">
+                                    <a href="https://github.com/jesusjsg/movie-hub-django" class="badge rounded-pill text-bg-dark text-decoration-none"><i class="bi bi-github me-2"></i>Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gx-3 gy-4 pb-3 mb-3 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="projects-img">
+                                <img src="img/movieHub.png" alt="movieHub">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="projects-text">
+                                <span class="title-project">MovieHub</span>
+                                <div class="languages">
+                                    <span class="badge rounded-pill text-bg-dark"><img src="img/django.svg" alt="django">Django</span>
+                                    <span class="badge rounded-pill text-bg-dark"><img src="img/python.svg" alt="python">Python</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id deleniti vitae sint labore quaerat qui, quas error atque dolor, reprehenderit nulla optio ipsa similique voluptates repellat? Praesentium, laborum. Aut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+     <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,10 @@
-:root {
+
+
+
+
+
+
+/* :root {
     --main-color: #3e065f;
 }
 
@@ -278,7 +284,7 @@ main {
 
 /* Projects */
 
-.projects-box .projects-img img{
+/* .projects-box .projects-img img{
     position: relative;
     border: 3px solid #000;
     border-radius: 0.5rem;
@@ -290,7 +296,7 @@ main {
     transform: scale(1.05);
 } */
 
-.projects-box .projects-text .title-project {
+/* .projects-box .projects-text .title-project {
     display: inline-block;
     padding: 8px 20px;
     background: rgba(255, 101, 28, .2);
@@ -311,5 +317,4 @@ main {
     width: 1.1rem;
     height: 1.1rem;
     margin-right: 0.4rem;
-}
-
+} */

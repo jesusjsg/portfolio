@@ -82,6 +82,10 @@ body {
         width: 20rem;
         height: 20rem;
     }
+
+    .title-project {
+        padding-top: 1rem;
+    }
 }
 
 

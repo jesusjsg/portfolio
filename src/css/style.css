@@ -1,21 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 
-
-
-
-
-
-/* :root {
-    --main-color: #3e065f;
+:root {
+    --text-transform: uppercase;
+    --letter-spacing: 2px;
+    --dark-color: #000;
 }
 
 body {
+    font-style: normal;
+    font-family: "Rethink Sans", serif;
     font-weight: 400;
-    color: #000;
 }
 
-img {
-    width: 100%;
+.main-header .navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    margin-right: 2px;
+    font-weight: 600;
+    text-transform: var(--text-transform);
+    font-size: 14px;
+    letter-spacing: var(--letter-spacing);
 }
+
+.about-section {
+    padding-top: 9.375rem;
+    padding-bottom: 6.25rem;
+}
+
+.about-profile-photo {
+    position: relative;
+    width: 23rem;
+    height: 23rem;
+}
+
+.about-profile-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section-heading {
+    letter-spacing: var(--letter-spacing);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.projects-container .projects-img img{
+    position: relative;
+    border: 3px solid #000;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.projects-container .projects-text .title-project {
+    display: inline-block;
+    letter-spacing: var(--letter-spacing);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.projects-container .languages {
+    margin-bottom: 1rem;
+}
+
+.projects-container .languages img {
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-right: 0.4rem;
+}
+
+
+@media (max-width: 767px) {
+    .about-section {
+        padding-top: 3rem;
+        padding-bottom: 4.375rem;
+    }
+
+    .about-section-photo {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+
+/*
 
 .bg {
     width: 100%;
@@ -76,15 +146,7 @@ img {
     padding: 0 10px;
 }
 
-.main-header .navbar-nav > li > .nav-link {
-    padding: 0 5px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #000;
-    letter-spacing: 2px;
-    position: relative;
-}
+
 
 .main-header .navbar-nav > li > .nav-link:hover {
     color: var(--main-color);
@@ -142,10 +204,7 @@ main {
 }
 
 .home {
-    position: relative;
-    overflow: hidden;
-    padding-top: 150px;
-    padding-bottom: 100px;
+
 }
 
 @media (max-width: 767px) {
@@ -284,7 +343,7 @@ main {
 
 /* Projects */
 
-/* .projects-box .projects-img img{
+/* .projects-container .projects-img img{
     position: relative;
     border: 3px solid #000;
     border-radius: 0.5rem;

@@ -3,14 +3,29 @@ import '../css/style.css'
 import Typed from 'typed.js'
 import * as bootstrap from 'bootstrap'
 
-window.addEventListener('scroll', function() {
+const textTyped = document.querySelector('#typed-words')
+
+function main() {
+  typedText()
+}
+
+function typedText(){
+  new Typed(textTyped, {
+    strings: ['backend developer', 'freelancer'],
+    typeSpeed: 90,
+    loop: true
+  })
+}
+
+document.addEventListener('DOMContentLoaded', main)
+/* window.addEventListener('scroll', function() {
     let scrollTop = window.scrollY
     if (scrollTop >= 50) {
         document.body.classList.add('header-fixed')
     } else {
         document.body.classList.remove('header-fixed')
     }
-})
+}) */
 
 // Typed text
 
@@ -22,7 +37,7 @@ window.addEventListener('scroll', function() {
 
 // Dark mode bs
 
-(() => {
+/*(() => {
     'use strict'
   
     const getStoredTheme = () => localStorage.getItem('theme')
@@ -97,4 +112,4 @@ window.addEventListener('scroll', function() {
           })
         })
     })
-})()
+})() */

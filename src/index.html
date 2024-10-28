@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 </head>
-<body>
-    <!-- Navbar -->
-    <header class="main-header sticky-top">
-        <nav class="navbar navbar-expand-lg mt-2 rounded">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+    <header class="main-header d-flex justify-content-center sticky-top">
+        <nav id="navbar" class="navbar navbar-expand">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbar-collapse-toggle">
+                <div class="navbar-nav justify-content-md-center">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link active" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#experience">Experience</a>
@@ -22,7 +21,7 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <button class="btn btn-link nav-link  dropdown-toggle d-flex align-items-center" id="theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
+                            <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (auto)">
                                 <i class="bi bi-display theme-icon-active"></i>
                                 <span class="visually-hidden" id="theme-text">Toggle theme</span>
                             </button>
@@ -58,18 +57,16 @@
     <main>
         <section id="about" class="about-section">
             <div class="container">
-                <div class="row gy-5 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-container text-center text-lg-start">
-                            <h4 class="text-body-emphasis">Hello, my name is <span class="text-primary-emphasis text-capitalize">jesus santana</span></h4>
-                            <h5 class="text-body-emphasis">I'm a <span class="text-capitalize text-primary-emphasis" id="typed-words"></span></h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatem aliquid consequuntur commodi expedita tempore obcaecati aliquam impedit, eaque, recusandae, voluptates sed nulla accusantium cupiditate excepturi et doloremque doloribus aspernatur?</p>
-                            <div class="social-badges justify-content-start">
-                                <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.github.com/jesusjsg"><i class="bi bi-github pe-2"></i>GitHub</a>
-                                <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.linkedin.com/in/jes%C3%BAs-santana"><i class="bi bi-linkedin pe-2"></i>LinkedIn</a>
-                                <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="mailto:jesusjsgdev@outlook.com"><i class="bi bi-envelope pe-2"></i>Contact</a>
-                                <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="#" download="Resume jesus santana"><i class="bi bi-file-person pe-2"></i>Resume</a>
-                            </div>
+                <div class="about-container d-flex justify-content-center align-items-center">
+                    <div class="col-md-8">
+                        <h4 class="text-body-emphasis">Hello, my name is <span class="text-primary-emphasis text-capitalize">jesus santana</span></h4>
+                        <h5 class="text-body-emphasis">I'm a <span class="text-capitalize text-primary-emphasis" id="typed-words"></span></h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas voluptatem aliquid consequuntur commodi expedita tempore obcaecati aliquam impedit, eaque, recusandae, voluptates sed nulla accusantium cupiditate excepturi et doloremque doloribus aspernatur?</p>
+                        <div class="social-badges justify-content-start">
+                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.github.com/jesusjsg"><i class="bi bi-github pe-2"></i>GitHub</a>
+                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.linkedin.com/in/jes%C3%BAs-santana"><i class="bi bi-linkedin pe-2"></i>LinkedIn</a>
+                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="mailto:jesusjsgdev@outlook.com"><i class="bi bi-envelope pe-2"></i>Contact</a>
+                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="#" download="Resume jesus santana"><i class="bi bi-file-person pe-2"></i>Resume</a>
                         </div>
                     </div>
                 </div>
@@ -77,16 +74,16 @@
         </section>
         <section id="experience" class="experience-section">
             <div class="container">
-                <div class="section-heading">
-                    <h4 class="text-primary-emphasis"><i class="bi bi-briefcase me-2"></i>experience</h4>
-                </div>
-                <div class="experience-container">
-                    <div class="col-md-6">
+                <div class="experience-container d-flex justify-content-center align-items-center">
+                    <div class="col-md-8">
+                        <div class="section-heading">
+                            <h4 class="text-primary-emphasis"><i class="bi bi-briefcase me-2"></i>experience</h4>
+                        </div>
                         <ul class="timeline">
                             <li>
                                 <span class="text-body-emphasis work-title">Clover Internacional, C.A</span>
                                 <span class="float-end text-body-secondary">Present</span>
-                                <p class="work-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quae, quia pariatur totam provident, iste tempore animi amet culpa quam excepturi velit itaque rerum eaque molestiae? Aspernatur laudantium voluptates natus.</p>
+                                <p class="work-description pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quae, quia pariatur totam provident, iste tempore animi amet culpa quam excepturi velit itaque rerum eaque molestiae? Aspernatur laudantium voluptates natus.</p>
                             </li>
                         </ul>
                     </div>
@@ -95,44 +92,46 @@
         </section>
         <section id="projects" class="projects-section">
             <div class="container">
-                <div class="section-heading">
-                    <h4 class="text-primary-emphasis"><i class="bi bi-code-slash me-2"></i>Projects</h4>
-                </div>
-                <div class="projects-container">
-                    <div class="card mb-4">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/img/movieHub.png" class="img-fluid" alt="movieHub django">
-                            </div>
-                            <div class="col-md-5">
-                                <div class="card-body">
-                                    <h5 class="title-project text-body-emphasis">moviehub</h5>
-                                    <div class="languages">
-                                        <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.djangoproject.com/"><img src="assets/icons/django.svg" alt="django">Django</a>
-                                        <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.python.org/"><img src="assets/icons/python.svg" alt="python">Python</a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maiores? Et sapiente nisi fugit veritatis commodi, distinctio temporibus, minima atque tempore natus nemo, quas earum ut officiis? Maxime, veniam aperiam.</p>
-                                    <div class="projects-preview">
-                                        <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://github.com/jesusjsg/movie-hub-django"><i class="bi bi-github me-2"></i>Code</a>
+                <div class="projects-container d-flex justify-content-center align-items-center">
+                    <div class="col-md-8">
+                        <div class="section-heading">
+                            <h4 class="text-primary-emphasis"><i class="bi bi-code-slash me-2"></i>Projects</h4>
+                        </div>
+                        <div class="card mb-5">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="assets/img/movieHub.png" class="img-fluid" alt="movieHub django">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="title-project text-body-emphasis">moviehub</h5>
+                                        <div class="languages">
+                                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.djangoproject.com/"><img src="assets/icons/django.svg" alt="django">Django</a>
+                                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.python.org/"><img src="assets/icons/python.svg" alt="python">Python</a>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maiores? Et sapiente nisi fugit veritatis commodi, distinctio temporibus, minima atque tempore natus nemo, quas earum ut officiis? Maxime, veniam aperiam.</p>
+                                        <div class="projects-preview">
+                                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://github.com/jesusjsg/movie-hub-django"><i class="bi bi-github me-2"></i>Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card mb-5">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/img/task-tracker.png" class="img-fluid" alt="movieHub django">
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card-body">
-                                    <h5 class="title-project text-body-emphasis">task tracker cli</h5>
-                                    <div class="languages">
-                                        <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.python.org/"><img src="assets/icons/python.svg" alt="python">Python</a>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maiores? Et sapiente nisi fugit veritatis commodi, distinctio temporibus, minima atque tempore natus nemo, quas earum ut officiis? Maxime, veniam aperiam.</p>
-                                    <div class="projects-preview">
-                                        <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://github.com/jesusjsg/task-tracker-cli-python"><i class="bi bi-github me-2"></i>Code</a>
+                        <div class="card mb-5">
+                            <div class="row g-0">
+                                <div class="col-md-5">
+                                    <img src="assets/img/task-tracker.png" class="img-fluid" alt="movieHub django">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="card-body">
+                                        <h5 class="title-project text-body-emphasis">task tracker cli</h5>
+                                        <div class="languages">
+                                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://www.python.org/"><img src="assets/icons/python.svg" alt="python">Python</a>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maiores? Et sapiente nisi fugit veritatis commodi, distinctio temporibus, minima atque tempore natus nemo, quas earum ut officiis? Maxime, veniam aperiam.</p>
+                                        <div class="projects-preview">
+                                            <a class="btn btn-light btn-sm rounded-pill text-decoration-none" href="https://github.com/jesusjsg/task-tracker-cli-python"><i class="bi bi-github me-2"></i>Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -142,12 +141,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <footer class="footer mt-auto py-2 bg-body-dark">
         <div class="container text-center">
             <p class="text-center text-body-secondary">&copy;<span class="ms-1" id="current-year"></span></p>
         </div>
     </footer>
-
      <script type="module" src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 import '../scss/styles.scss'
 import '../css/style.css'
+import './components/colorMode.js'
 import Typed from 'typed.js'
 import * as bootstrap from 'bootstrap'
 

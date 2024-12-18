@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>Portfolio</title>
 </head>
 <body class="dark:bg-gradient-to-br from-gray-950 to-black font-mono">
-    <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-center md:flex-nowrap z-50 w-full text-sm">
+    <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-center md:flex-nowrap z-50 w-full text-sm sm:justify-center sm">
         <nav class="mt-4 relative bg-white/40 backdrop-blur-lg rounded-[2rem] mx-2 py-2.5 md:flex md:items-center md:justify-center md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900/60">
             <div
                 class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0">
@@ -53,15 +53,15 @@
     </header>
     <main id="content">
         <!-- Profile -->
-        <div class="w-full max-w-2xl mx-auto pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
+        <div class="w-full max-w-3xl mx-auto pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
             <div class="flex items-center gap-x-3">
                 <div class="shrink-0">
                     <img class="shrink-0 size-24 rounded-full" src="src/assets/img/profile.jpeg" alt="profile github">
                 </div>
-                <div class="grow">
+                <div class="ms-3 grow">
                     <h1 class="text-3xl font-bold text-gray-800 dark:text-neutral-200">Jesús Santana</h1>
                     <p class="text-lg text-gray-700 dark:text-neutral-400">
-                        Soy un <span class="capitalize" id="typed-words"></span>
+                        Soy un <span class="capitalize text-purple-800 dark:text-purple-500" id="typed-words"></span>
                     </p>
                 </div>
             </div>
@@ -79,32 +79,69 @@
                 <!-- Social media -->
                 <div class="mt-6 text-sm text-gray-800 dark:text-neutral-100">
                     <div class="flex items-center gap-x-2.5">
-                        <a class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-gray-100 hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20" href="https://github.com/jesusjsg">
-                            <img class="shrink-0 size-4" src="src/assets/icons/personal/github.svg" alt="personal github">
+                        <a class="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20" href="https://github.com/jesusjsg">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" 
+                            height="24" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                            stroke-linecap="round" 
+                            stroke-linejoin="round"
+                            class="shrink-0 stroke-2 size-5 icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                            </svg>
                             GitHub
                         </a>
-                        <a class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
-                            href="https://www.linkedin.com/in/jes%C3%BAs-santana">
-                            <img class="shrink-0 size-4" src="src/assets/icons/personal/linkedin.svg" alt="personal linkedin">
-                            LinkedIn
-                        </a>
-                        <a class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
+                        <a class="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
                             href="mailto:jesusjsgdev@outlook.com">
-                            <img class="shrink-0 size-4" src="src/assets/icons/personal/contact.svg" alt="personal email">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            fill="none"
+                            viewBox="0 0 24 24" 
+                            stroke="currentColor"
+                            class="shrink-0 size-5 stroke-2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+
                             Contacto
                         </a>
-                        <a class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
-                            href="mailto:jesusjsgdev@outlook.com">
-                            <img class="shrink-0 size-4" src="src/assets/icons/personal/cv.svg" alt="personal cv">
-                            Curriculum
+                        <a class="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
+                            href="https://www.linkedin.com/in/jes%C3%BAs-santana">
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="24" 
+                            height="24" 
+                            viewBox="0 0 24 24" 
+                            fill="none" 
+                            stroke="currentColor"
+                            stroke-linecap="round" 
+                            stroke-linejoin="round"
+                            class="shrink-0 stroke-2 size-5 icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M8 11v5" />
+                                <path d="M8 8v.01" />
+                                <path d="M12 16v-5" />
+                                <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+                                <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+                            </svg>
+                            LinkedIn
                         </a>
                     </div>
                 </div>
             </div>
             <div class="mt-10 sm:mt-14">
-                <h2 class="mb-5 font-bold uppercase text-gray-800 dark:text-neutral-200">
+                <h2 class="mb-5 font-bold uppercase text-xl text-purple-800 dark:text-purple-500">
                     Experiencia laboral
-                    <img class="ms-2 inline-flex size-5 mb-1 text-gray-800 dark:text-neutral-200" src="src/assets/icons/personal/work.svg" alt="work projects icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="inline-flex size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                    </svg>
                 </h2>
                 <!-- Timeline -->
                 <div>
@@ -116,17 +153,17 @@
                             </div>
                         </div>
                         <div class="grow pb-8 group-last:pb-0">
-                            <h3 class="mb-1 text-xs text-gray-700 dark:text-neutral-400">
-                                2024 - 2024
+                            <h3 class="mb-1 text-sm text-gray-700 dark:text-neutral-400">
+                                Enero 2024
                             </h3>
-                            <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+                            <p class="font-bold text-base text-gray-800 dark:text-purple-500">
                                 Desarrollador FullStack
                             </p>
-                            <p class="font-normal text-sm text-gray-800 dark:text-neutral-400">
+                            <p class="text-base text-gray-800 dark:text-neutral-200">
                                 Clover Internacional C.A
                             </p>
-                            <p class="mt-2 font-normal text-sm text-gray-700 dark:text-neutral-400">
-                                Desarrollé un sistema de nóminas para el departamento de Transporte, mediante el uso de diferentes tecnologías como PHP para el backend, y JQuery para el frontend, mejorando la elaboración de las nóminas en un 25%.
+                            <p class="mt-4 font-normal text-base text-justify text-gray-700 dark:text-neutral-300">
+                                Desarrollé un sistema de nóminas, mediante el uso de diferentes tecnologías como PHP para el backend, y JQuery para el frontend, mejorando el tiempo de procesamiento en un 25%, optimizando la eficiencia de los procesos administrativos.
                             </p>
                         </div>
                     </div>
@@ -134,88 +171,53 @@
             </div>
             <div class="mt-10 sm:mt-14 mb-5">
                 <!-- Projects -->
-                <h2 class="mb-5 font-bold uppercase text-gray-800 dark:text-neutral-200">
+                <h2 class="mb-5 font-bold uppercase text-xl text-purple-800 dark:text-purple-500">
                     Proyectos
-                    <img class="ms-2 inline-flex size-5 mb-1" src="src/assets/icons/personal/projects.svg" alt="projects icon">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor"
+                    class="inline-flex size-6 stroke-2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
                 </h2>
                 <div
-                    class="bg-white rounded-xl sm:flex dark:bg-neutral-900">
+                    class="bg-white rounded-xl sm:flex dark:bg-transparent">
                     <div
-                        class="shrink-0 relative w-full rounded-xl overflow-hidden pt-[40%] sm:rounded-s-xl sm:max-w-60 md:rounded-se-none md:max-w-xs">
-                        <img class="size-full rounded-lg absolute top-0 start-0 object-cover"
+                        class="shrink-0 relative w-full rounded-xl overflow-hidden pt-[40%] sm:rounded-xl sm:max-w-60 md:max-w-xs">
+                        <img class="size-full rounded-xl absolute top-0 start-0 object-cover transition-all duration-300 hover:scale-110"
                             src="src/assets/img/movieHub.png"
                             alt="MovieHub">
                     </div>
                     <div class="flex flex-wrap">
                         <div class="p-4 flex flex-col h-full sm:p-7">
-                            <h3 class="text-lg font-semibold text-gray-800 dark:text-white">
+                            <h3 class="text-lg font-semibold uppercase text-purple-800 dark:text-purple-500 mb-2">
                                 Portal de películas
                             </h3>
-                            <p class="mt-1 text-gray-500 dark:text-neutral-400 text-sm">
+                            <ul class="flex flex-row mb-2 mt-1 gap-x-2">
+                                <span class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-neutral-800">Python</span>
+                                <span class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-neutral-800">Django</span>
+                            </ul>
+                            <p class="mt-1 mb-2 text-gray-500 dark:text-neutral-400 text-base">
                                 Portal de películas desarrollado con Python y Django, utilizando la API de The Movie Database (TMDb) para obtener
                                 información detallada de diversas películas, incluyendo sus calificaciones y géneros.
                             </p>
                             <div class="mt-5 sm:mt-auto">
-                                <a class="mt-2 inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
+                                <a class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
                                     href="https://github.com/jesusjsg/movie-hub-django">
-                                    <img class="shrink-0 size-4" src="src/assets/icons/personal/github.svg" alt="code">
-                                    Código
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="shrink-0 stroke-2 size-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-github">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    </svg>
+                                    GitHub
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="mt-10 sm:mt-14 mb-5">
-                <!-- Projects -->
-                <h2 class="mb-5 font-bold uppercase text-gray-800 dark:text-neutral-200">
-                    Habilidades
-                    <img class="ms-2 inline-flex size-5 mb-1" src="src/assets/icons/personal/projects.svg" alt="projects icon">
-                </h2>
-                <div class="space-y-3">
-                    <dl class="flex flex-col sm:flex-row gap-1">
-                        <dt class="min-w-40">
-                            <span class="block text-sm text-gray-800 dark:text-neutral-200">
-                                Desarrollo:
-                            </span>
-                        </dt>
-                        <dd>
-                            <ul>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    Python
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                                <li class="me-1 after:content-[','] inline-flex items-center text-sm text-gray-700 dark:text-neutral-200">
-                                    <img class="shrink-0 size-4 me-2" src="src/assets/icons/language/python.svg" alt="python">
-                                    PHP
-                                </li>
-                            </ul>
-                        </dd>
-                    </dl>
                 </div>
             </div>
         </div>

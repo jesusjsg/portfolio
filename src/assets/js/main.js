@@ -13,7 +13,7 @@ function main() {
 
 function typedText() {
     new Typed(textTyped, {
-        strings: ['desarrollador backend junior', 'freelancer', 'ingeniero de sistemas'],
+        strings: ['desarrollador backend junior', 'ingeniero de sistemas'],
         typeSpeed: 90,
         loop: true,
     })

@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
 </head>
-<body class="dark:bg-gradient-to-br from-gray-950 to-black font-mono">
-    <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-center md:flex-nowrap z-50 w-full text-sm sm:justify-center sm">
-        <nav class="mt-4 relative bg-white/40 backdrop-blur-lg rounded-[2rem] mx-2 py-2.5 md:flex md:items-center md:justify-center md:py-0 md:px-4 md:mx-auto dark:bg-neutral-900/60">
+<body class="dark:bg-gradient-to-br from-gray-950 to-black font-sans">
+    <header class="sticky top-0 inset-x-0 text-sm w-full z-50 sm:flex md:justify-center md:flex-nowrap">
+        <nav data-hs-scrollspy="#scrollspy" data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent" class="mt-4 relative bg-white/40 backdrop-blur-lg rounded-[2rem] mx-1 py-1.5 dark:bg-neutral-900/60 md:flex md:items-center md:justify-center md:py-0 md:px-4 md:mx-auto">
             <div
-                class="flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0">
-                <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-purple-800 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-500"
-                    href="#">Sobre mí</a>
-                <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-purple-700 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-500"
-                    href="#">Experiencia</a>
-                <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-purple-700 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-500"
-                    href="#">Proyectos</a>
-                <a class="py-0.5 md:p-3 px-4 md:px-1 text-gray-500 hover:text-purple-700 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-500" href="#">Habilidades</a>
+                class="flex flex-wrap justify-center items-center gap-1 md:flex-row md:items-center md:justify-center md:gap-3 md:mt-0 md:py-0">
+                <a class="px-4 text-gray-500 hover:text-purple-800 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-400 hs-scrollspy-active:text-purple-800 dark:hs-scrollspy-active:text-purple-400 md:py-3 md:px-1"
+                    href="#about">Sobre mí</a>
+                <a class="px-4 text-gray-500 hover:text-purple-800 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-400 hs-scrollspy-active:text-purple-800 dark:hs-scrollspy-active:text-purple-400 md:py-3 md:px-1"
+                    href="#projects">Experiencia</a>
+                <a class="px-4 text-gray-500 hover:text-purple-800 focus:outline-none dark:text-neutral-300 dark:hover:text-purple-400 hs-scrollspy-active:text-purple-800 dark:hs-scrollspy-active:text-purple-400 md:py-3 md:px-1"
+                    href="#projects">Proyectos</a>
                 <div class="inline-block">
                     <button type="button"
                         class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
                         data-hs-theme-click-value="dark">
                         <span class="group inline-flex shrink-0 justify-center items-center size-9">
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                             </svg>
                         </span>
@@ -33,8 +34,9 @@
                         class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
                         data-hs-theme-click-value="light">
                         <span class="group inline-flex shrink-0 justify-center items-center size-9">
-                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <circle cx="12" cy="12" r="4"></circle>
                                 <path d="M12 2v2"></path>
                                 <path d="M12 20v2"></path>
@@ -52,21 +54,21 @@
         </nav>
     </header>
     <main id="content">
-        <!-- Profile -->
-        <div class="w-full max-w-3xl mx-auto pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center gap-x-3">
-                <div class="shrink-0">
-                    <img class="shrink-0 size-24 rounded-full" src="src/assets/img/profile.jpeg" alt="profile github">
+        <div id="scrollspy-scrollable-parent" class="w-full max-w-3xl mx-auto pt-10  sm:px-6 md:pt-16 px-4 lg:px-8">
+            <!-- Profile name -->
+            <div id="about" class="flex flex-col gap-x-3 sm:flex-row">
+                <div class="shrink-0 mb-3">
+                    <img class="shrink-0 size-28 rounded-full" src="src/assets/img/profile.jpeg" alt="profile github">
                 </div>
-                <div class="ms-3 grow">
-                    <h1 class="text-3xl font-bold text-gray-800 dark:text-neutral-200">Jesús Santana</h1>
-                    <p class="text-lg text-gray-700 dark:text-neutral-400">
-                        Soy un <span class="capitalize text-purple-800 dark:text-purple-500" id="typed-words"></span>
-                    </p>
+                <div class="grow sm:ms-2">
+                    <h1 class="text-4xl font-bold text-gray-800 dark:text-neutral-200 mb-3">Jesús Santana</h1>
+                    <h2 class="text-2xl capitalize text-purple-800 dark:text-purple-400">
+                        <span id="typed-words"></span>
+                    </h2>
                 </div>
             </div>
             <!-- About me -->
-            <div class="mt-8 text-justify text-lg">
+            <div class="mt-3 text-justify text-lg">
                 <p class="text-gray-700 dark:text-neutral-200">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam eius delectus aspernatur consequuntur! Enim
                     vero veniam nostrum iste, eum possimus quaerat repellendus, quisquam vitae nemo quia earum amet fugiat.
@@ -105,7 +107,6 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                             </svg>
-
                             Contacto
                         </a>
                         <a class="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-gray-100 text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20 dark:focus:white/20"
@@ -147,7 +148,7 @@
                 <div>
                     <div class="group relative flex gap-x-5">
                         <div
-                            class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-400 dark:after:bg-neutral-700">
+                            class="relative last:after:hidden after:absolute after:top-7 after:bottom-0 after:start-3.5 after:w-px after:-translate-x-[0.5px] after:bg-gray-300 dark:after:bg-neutral-700">
                             <div class="relative z-10 size-7 flex justify-center items-center">
                                 <div class="size-2 rounded-full bg-purple-700 dark:bg-purple-700"></div>
                             </div>
@@ -169,7 +170,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-10 sm:mt-14 mb-5">
+            <div id="projects" class="mt-10 sm:mt-14 mb-5">
                 <!-- Projects -->
                 <h2 class="mb-5 font-bold uppercase text-xl text-purple-800 dark:text-purple-500">
                     Proyectos
@@ -187,7 +188,7 @@
                     <div
                         class="shrink-0 relative w-full rounded-xl overflow-hidden pt-[40%] sm:rounded-xl sm:max-w-60 md:max-w-xs">
                         <img class="size-full rounded-xl absolute top-0 start-0 object-cover transition-all duration-300 hover:scale-110"
-                            src="src/assets/img/movieHub.png"
+                            src="public/img/movieHub.webp"
                             alt="MovieHub">
                     </div>
                     <div class="flex flex-wrap">
@@ -196,8 +197,17 @@
                                 Portal de películas
                             </h3>
                             <ul class="flex flex-row mb-2 mt-1 gap-x-2">
-                                <span class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-neutral-800">Python</span>
-                                <span class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs font-medium bg-gray-800 text-white dark:bg-white dark:text-neutral-800">Django</span>
+                                <a class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20" href="https://python.org">
+                                    <img class="shrink-0 size-3" src="public/icons/python.svg" alt="languages">Python
+                                </a>
+                                <a class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20"
+                                    href="https://www.djangoproject.com/">
+                                    <img class="shrink-0 size-4" src="public/icons/django.svg" alt="languages">DJango
+                                </a>
+                                <a class="inline-flex items-center gap-x-2 py-1 px-3 rounded-full text-xs text-gray-800 dark:bg-white/10 dark:text-white hover:bg-gray-300 focus:outline-none focus:bg-gray-300 dark:hover:bg-white/20"
+                                    href="https://getbootstrap.com/">
+                                    <img class="shrink-0 size-4" src="public/icons/bootstrap.svg" alt="languages">Bootstrap
+                                </a>
                             </ul>
                             <p class="mt-1 mb-2 text-gray-500 dark:text-neutral-400 text-base">
                                 Portal de películas desarrollado con Python y Django, utilizando la API de The Movie Database (TMDb) para obtener
@@ -233,7 +243,6 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./src/assets/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
-
 </html>

@@ -1,8 +1,8 @@
 import Typed from 'typed.js'
-import '../../public/css/styles.css'
-import '../js/components/themeColor.js'
 import 'preline'
 import { HSScrollspy } from 'preline'
+import '../../public/css/styles.css'
+import './components/themeColor.js'
 
 const textTyped = document.querySelector('#typed-words')
 const currentYear = document.querySelector('#current-year')
@@ -28,10 +28,6 @@ function getCurrentYear() {
 
 function scrollspyInit() {
     const scrollspy = document.querySelector('[data-hs-scrollspy="#scrollspy"]')
-
-    if (scrollspy) {
-        HSScrollspy.autoInit(scrollspy)
-    }
 }
 
 document.addEventListener('DOMContentLoaded', main)

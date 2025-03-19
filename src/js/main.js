@@ -1,6 +1,5 @@
 import Typed from 'typed.js'
 import 'preline'
-import '../../public/css/styles.css'
 import './components/themeColor.js'
 
 const textTyped = document.querySelector('#typed-words')

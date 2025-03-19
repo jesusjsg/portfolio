@@ -1,6 +1,5 @@
 import Typed from 'typed.js'
 import 'preline'
-import { HSScrollspy } from 'preline'
 import '../../public/css/styles.css'
 import './components/themeColor.js'
 
@@ -24,10 +23,6 @@ function typedText() {
 function getCurrentYear() {
     const year = new Date().getFullYear()
     currentYear.textContent = year
-}
-
-function scrollspyInit() {
-    const scrollspy = document.querySelector('[data-hs-scrollspy="#scrollspy"]')
 }
 
 document.addEventListener('DOMContentLoaded', main)

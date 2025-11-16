@@ -2,10 +2,13 @@ import { GithubIcon } from "@/assets/icons/GithubIcon";
 import { LinkedinIcon } from "@/assets/icons/LinkedinIcon";
 import { ResumeIcon } from "@/assets/icons/ResumeIcon";
 import { SocialButton } from "@/components/ui/SocialButton";
+import { useTyped } from "@/hooks/useTyped";
 
 export const About = () => {
+  const typedRef = useTyped(["Systems Engineer", "Backend Developer"]);
+
   return (
-    <section className="mt-6">
+    <section className="mt-6" id="about">
       <div className="flex items-center gap-x-3">
         <div className="shrink-0">
           <img
@@ -14,11 +17,11 @@ export const About = () => {
           />
         </div>
         <div className="grow">
-          <h1 className="text-lg font-medium text-gray-800 dark:text-neutral-200">
+          <h1 className="text-lg font-medium text-gray-800 dark:text-purple-500">
             Jesus Santana
           </h1>
           <p className="text-sm text-gray-600 dark:text-neutral-400">
-            Systems engineer and backend developer
+            <span ref={typedRef}></span>
           </p>
         </div>
       </div>

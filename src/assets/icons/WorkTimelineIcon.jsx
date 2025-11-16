@@ -1,4 +1,4 @@
-export const ResumeIcon = () => {
+export const WorkTimelineIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,13 +10,11 @@ export const ResumeIcon = () => {
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="icon icon-tabler icon-tabler-file-cv"
+      className="icon icon-tabler icon-tabler-briefcase-2"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-      <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-      <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
-      <path d="M13 11l1.5 6l1.5 -6" />
+      <path d="M3 9a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9z" />
+      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
     </svg>
   );
 };

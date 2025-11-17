@@ -14,7 +14,7 @@ const experiences = [
     ],
   },
   {
-    dates: "June 2024 - March 2025",
+    dates: "January 2024 - July 2024",
     title: "Software Engineering Intern",
     company: "Clover Internacional, C.A",
     overview:

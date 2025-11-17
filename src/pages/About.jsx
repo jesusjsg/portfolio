@@ -25,18 +25,18 @@ export const About = () => {
           </p>
         </div>
       </div>
-
       <p className="mt-8 text-sm text-gray-600 dark:text-neutral-400">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
-        ex sapien vitae pellentesque sem placerat. In id cursus mi pretium
-        tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
-        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis
-        massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper
-        vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
-        inceptos himenaeos.
+        Backend developer specialized in designing and implementing
+        high-performance systems. My main focus is on building robust and
+        scalable APIs that enable integration and support the sustainable growth
+        of applications. I apply software engineering best practices to deliver
+        efficient, secure, and maintainable solutions.
       </p>
+      <p className="mt-4 text-sm text-gray-600 dark:text-neutral-400">
+        I am also interested in contributing to open source projects as a way to
+        keep learning, share knowledge, and support the growth of the community.
+      </p>{" "}
       <div className="social-network mt-6 flex gap-x-2">
-        <SocialButton text="Resume" icon={<ResumeIcon />} />
         <SocialButton
           text="Github"
           icon={<GithubIcon />}
@@ -47,6 +47,7 @@ export const About = () => {
           icon={<LinkedinIcon />}
           href="https://linkedin.com/in/jesús-santana"
         />
+        <SocialButton text="Resume" icon={<ResumeIcon />} />
       </div>
     </section>
   );

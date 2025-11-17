@@ -47,7 +47,6 @@ export const About = () => {
           icon={<LinkedinIcon />}
           href="https://linkedin.com/in/jesús-santana"
         />
-        <SocialButton text="Resume" icon={<ResumeIcon />} />
       </div>
     </section>
   );

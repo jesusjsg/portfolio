@@ -1,7 +1,7 @@
 import { GithubIcon } from "@/assets/icons/GithubIcon";
 import { LinkedinIcon } from "@/assets/icons/LinkedinIcon";
-import { ResumeIcon } from "@/assets/icons/ResumeIcon";
 import { SocialButton } from "@/components/ui/SocialButton";
+import profilePhoto from "@/assets/images/bmo-profile-photo.webp";
 import { useTyped } from "@/hooks/useTyped";
 
 export const About = () => {
@@ -11,10 +11,7 @@ export const About = () => {
     <section className="mt-6" id="about">
       <div className="flex items-center gap-x-3">
         <div className="shrink-0">
-          <img
-            className="shrink-0 size-20 rounded-full"
-            src="https://github.com/jesusjsg.png"
-          />
+          <img className="shrink-0 size-20 rounded-full" src={profilePhoto} />
         </div>
         <div className="grow">
           <h1 className="text-lg font-medium text-gray-800 dark:text-purple-500">

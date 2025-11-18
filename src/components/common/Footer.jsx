@@ -8,7 +8,7 @@ export const Footer = () => {
               href="mailto:jesusjsgdev@gmail.com"
               className="text-xs text-gray-600 dark:text-neutral-400 underline"
             >
-              Contact - Email
+              Contact
             </a>
           </div>
 

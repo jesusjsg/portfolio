@@ -16,11 +16,12 @@ const projects = [
     repo: "https://github.com/jesusjsg/expense-tracker",
   },
   {
-    title: "Instant Dollar (Chrome Extension)",
+    title: "Filesnap",
     description:
-      "A Chrome extension that calculates Bolívares using different exchange rates to help users compare and convert easily.",
-    technologies: ["JavaScript", "Chrome API"],
-    repo: "https://github.com/jesusjsg/instant-dollar",
+      "A command-line tool for managing files and directories, automating database seeding, bulk auditing, and smart cleanup.",
+    technologies: ["Python", "PyPI", "CLI"],
+    repo: "https://github.com/jesusjsg/filesnap",
+    pypi: "https://pypi.org/project/filesnap/",
   },
 ];
 
